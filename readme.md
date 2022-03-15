@@ -17,7 +17,7 @@ Commands:
 <br>3- node wcat.js -s filepath => convert big line breaks into a singular line break
 <br>4- node wcat.js -n filepath => give numbering to all the lines
 <br>5- node wcat -b filepath => give numbering to non-empty lines
-<br>6- node wcat -c filepath =>it create a new file in given path and write data which is passed in second arguement and if given file already exist,it overwrite the data in that file so we need to care of that
+<br>6- node wcat -c filepath =>it creates a new file in given path and write data which is passed in second arguement and if given file already exist,it overwrites the data in that file so we need to care of that.
 <br>NOTE-We can mix and match the options.
 
 Edge cases:
