@@ -8,6 +8,10 @@ const fs = require("fs");
 // console.log(input);
 let inputArr = process.argv.slice(2);
 // console.log(inputArr);
+if(inputArr.includes("-c")){
+    let fileid=inputArr.indexOf("-c")+1;
+    var file=inputArr[fileid];
+}
 let filesArr = [];
 let optionsArr = [];
 //===============> placed files path in filesArr <=============
@@ -22,6 +26,15 @@ for (let i = 0; i < inputArr.length; i++){
     }
 }
 // console.log("file to be read are " + filesArr);
+
+//------------>for creating new file
+//command-node wcat.js -c f6.txt
+if(optionsArr.includes("-c")){
+    console.log("welcome");
+    
+    fs.writeFileSync(`./${file}`,"");
+
+}
 
 //=============>check if all the files are present<============= //
 for (let i = 0; i < filesArr.length; i++){
